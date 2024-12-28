@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="Resources/pomodoro.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="icon"></div>
+        </div>
+        <!-- To-Do List Section -->
+        <div class="todo-section">
+            <h2>List Tugas</h2>
+            <div class="todo-input">
+                <input type="text" id="todo-input" placeholder="Tambah Tugas">
+                <button id="add-todo"><ion-icon name="add-circle-sharp"></ion-icon>
+            </div>
+            <ul id="todo-list"></ul>
+        </div>
+        <div class="bottom-section">
+            <!-- Timer Section -->
+            <div class="timer-section">
+                <h1>Timer</h1>
+                <div class="timer">
+                    <span id="minutes">00</span>:<span id="seconds">00</span>
+                </div>
+                <div class="timer-controls">
+                    <input type="number" id="custom-time" placeholder= "Masukkan Waktu">
+                    <button id="toggle-timer"><ion-icon name="play-circle"></ion-icon></button>
+                    <button id="reset-timer"><ion-icon name="hourglass"></ion-icon></button>
+                </div>
+            </div>
+            <!-- Spotify Section -->
+            <div class="spotify-section">
+                <h2>Spotify</h2>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO21mH97?utm_source=generator" width="80%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/2l8I5pWUnfF7bMK1z6EJRk?utm_source=generator" width="80%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="Resources/pomodoro.js"></script>
+</body>
+</html>
